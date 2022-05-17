@@ -16,13 +16,16 @@ const AppoinmentBanner = ({selected, setSelected}) => {
         <div className="hero min-h-screen px-12 bg-png">
         <div className="hero-content flex-col lg:flex-row-reverse">
             <img src={chair} className="max-w-sm rounded-lg shadow-2xl lg:ml-40" alt='chair' />
-            <div>
-            <DayPicker
-            mode="single"
-            selected={selected} 
-            onSelect={setSelected}
-            footer={footer}
-            />
+
+            <div className="card w-96 bg-base-100 shadow-2xl">
+                <div className="card-body">
+                <DayPicker
+                mode="single"
+                selected={selected} 
+                onSelect={setSelected}
+                footer={footer}
+                />
+                </div>
             </div>
         </div>
         </div>
